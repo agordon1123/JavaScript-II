@@ -80,6 +80,35 @@ function contains(item, list, cb) {
   // Pass true to the callback if it is, otherwise pass false.
 }
 
+/*
+INVALID CODE:
+const list = ['Pencil', 'Notebook']
+
+function contains(items, list, cb) {
+  if(items == list) {
+    return true;
+  }
+}
+
+contains(item, list, cb);
+*/
+
+// RETURNS FALSE:
+const list = ['Pencil', 'Notebook']
+
+function contains(item, list, cb) {
+  if(item == list) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+contains(items, list, function(dupe) {
+  console.log(dupe)
+});
+
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
