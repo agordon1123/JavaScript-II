@@ -1,6 +1,11 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+const statement = 'I have written a simple closure!';
+function returnStatement () {
+  return statement;
+}
+returnStatement();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
